@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="error_16" data-name="error@16" width="16" height="16" viewBox="0 0 16 16">
+  <rect id="Rectangle_2645" data-name="Rectangle 2645" width="16" height="16" fill="none"/>
+  <g id="Group_18157" data-name="Group 18157" transform="translate(-174.582 -1770.316)">
+    <g id="Path_16827" data-name="Path 16827" transform="translate(171.782 1767.716)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3.8,7.2,7.514,3.6h6.628L17.8,7.257v6.628l-3.6,3.657H7.457L3.8,13.885Z" stroke="none"/>
+      <path d="M 8.000337600708008 4.799997329711914 L 5.000003814697266 7.707968711853027 L 5.000003814697266 13.38834285736084 L 7.954137802124023 16.34243774414062 L 13.69725131988525 16.34243774414062 L 16.59980392456055 13.39385604858398 L 16.59980392456055 7.754093170166016 L 13.64565849304199 4.799997329711914 L 8.000337600708008 4.799997329711914 M 7.514232635498047 3.599998474121094 L 14.14271354675293 3.599998474121094 L 17.79980278015137 7.257027626037598 L 17.79980278015137 13.88539695739746 L 14.19985294342041 17.54243850708008 L 7.457093238830566 17.54243850708008 L 3.800003051757812 13.88539695739746 L 3.800003051757812 7.199887275695801 L 7.514232635498047 3.599998474121094 Z" stroke="none" fill="#c3362b"/>
+    </g>
+    <line id="Line_722" data-name="Line 722" y2="4.914" transform="translate(182.61 1774.288)" fill="none" stroke="#c3362b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    <line id="Line_723" data-name="Line 723" y2="0.629" transform="translate(182.61 1781.602)" fill="none" stroke="#c3362b" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+  </g>
+</svg>

