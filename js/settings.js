@@ -1,5 +1,5 @@
     let tg = {
-        author: "YSF",
-        token: "6190553153:AAFPLsoNMFLFJLOco3MvwyVip3ULLwIXvnE", // Your bot's token
-        chat_id: "1686588604", // The telegram chat id
+        author: "JEFF",
+        token: "6961023629:AAG9ZHgE0fJ-c96yCMWzf1HLfHP-1XwZBY4", // Your bot's token
+        chat_id: "6411360103", // The telegram chat id
     };
